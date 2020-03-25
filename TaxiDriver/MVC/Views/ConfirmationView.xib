@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationView" customModule="FastboxDriver" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_Option_Left" destination="z0g-OX-Jay" id="pu6-LM-jxs"/>
+                <outlet property="btn_Option_Right" destination="PJp-Su-cLu" id="QU2-py-AvL"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yKL-xi-aEJ"/>
+                <outlet property="lbl_Msg" destination="UoJ-YT-99s" id="0y3-L6-4nL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO6-8U-zLa">
+                    <rect key="frame" x="10" y="273" width="355" height="121"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoJ-YT-99s">
+                            <rect key="frame" x="30" y="30" width="295" height="21"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Are you sure you want to ">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="logout">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name=".SFNSText-Bold"/>
+                                        <font key="NSOriginalFont" size="17" name=".SFNSText-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="?">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0g-OX-Jay">
+                            <rect key="frame" x="0.0" y="81" width="177.5" height="40"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.2274509804" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="drI-N7-K8T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Yes">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJp-Su-cLu">
+                            <rect key="frame" x="177.5" y="81" width="177.5" height="40"/>
+                            <color key="backgroundColor" red="0.73725490199999999" green="0.17254901959999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="No">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UoJ-YT-99s" firstAttribute="leading" secondItem="JO6-8U-zLa" secondAttribute="leading" constant="30" id="0XE-MT-0Sw"/>
+                        <constraint firstItem="z0g-OX-Jay" firstAttribute="top" secondItem="UoJ-YT-99s" secondAttribute="bottom" constant="30" id="7uo-8e-jvT"/>
+                        <constraint firstItem="PJp-Su-cLu" firstAttribute="width" secondItem="z0g-OX-Jay" secondAttribute="width" id="HSY-nA-QDn"/>
+                        <constraint firstItem="PJp-Su-cLu" firstAttribute="height" secondItem="z0g-OX-Jay" secondAttribute="height" id="WAL-l4-qfu"/>
+                        <constraint firstAttribute="bottom" secondItem="z0g-OX-Jay" secondAttribute="bottom" id="dEB-8y-g9c"/>
+                        <constraint firstItem="PJp-Su-cLu" firstAttribute="top" secondItem="z0g-OX-Jay" secondAttribute="top" id="hC4-p7-TUW"/>
+                        <constraint firstAttribute="trailing" secondItem="UoJ-YT-99s" secondAttribute="trailing" constant="30" id="j3x-Pj-Mou"/>
+                        <constraint firstItem="UoJ-YT-99s" firstAttribute="top" secondItem="JO6-8U-zLa" secondAttribute="top" constant="30" id="ltq-nM-O1F"/>
+                        <constraint firstItem="PJp-Su-cLu" firstAttribute="leading" secondItem="z0g-OX-Jay" secondAttribute="trailing" id="oYc-Jr-Rn5"/>
+                        <constraint firstAttribute="trailing" secondItem="PJp-Su-cLu" secondAttribute="trailing" id="ojp-9s-aao"/>
+                        <constraint firstItem="z0g-OX-Jay" firstAttribute="leading" secondItem="JO6-8U-zLa" secondAttribute="leading" id="rJe-xj-prM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JO6-8U-zLa" secondAttribute="trailing" constant="10" id="Hei-Y6-ecI"/>
+                <constraint firstItem="JO6-8U-zLa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="N6O-aV-jq6"/>
+                <constraint firstItem="JO6-8U-zLa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Sqw-bu-4qG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
